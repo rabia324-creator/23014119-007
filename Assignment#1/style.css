@@ -1,0 +1,522 @@
+/* General Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #ff007f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .hero {
+    background: url('images/background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-content {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    background-color: #ff1493;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .hero .btn:hover {
+    background-color: #ff69b4;
+  }
+  
+  /* Featured Flavors Section */
+  .flavors {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .flavors h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff007f;
+  }
+  
+  .flavor-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .flavor-card {
+    width: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .flavor-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .flavor-card h3 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+    color: #ff007f;
+  }
+  
+  .flavor-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    background-color: #ff007f;
+    color: white;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    width: 40%;
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .testimonial-card p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card p:nth-child(2) {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer .social-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer .social-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  footer .social-links li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  footer .social-links li a:hover {
+    color: #ff007f;
+  }
+  
+/* About Section */
+.about {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff007f;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .about .team {
+    margin-top: 30px;
+  }
+  
+  .about .team h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ff007f;
+  }
+  
+  .about .team ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about .team li {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .about .team li strong {
+    color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  footer a {
+    color: #ff007f;
+    text-decoration: none;
+  }
+  
+  footer .social-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer .social-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  footer .social-links li a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-links li a:hover {
+    color: #ff007f;
+  }
+  
+
+/* menu */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.menu-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.menu-item h3 {
+    margin-bottom: 10px;
+    color: #ff007f;
+}
+
+.menu-item p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff007f;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-info {
+    width: 48%;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ff007f;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff007f;
+  }
+  
+  .contact-form label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background: #ff007f;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #ff1493;
+  }
+  
+  /* Payment Page */
+.payment {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .payment h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff69b4;
+  }
+  
+  .payment-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .order-summary {
+    margin-top: 30px;
+    background: #fff0f5;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .order-summary h3 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #ff69b4;
+  }
+  
+  .order-summary p {
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #ff69b4;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #ff1493;
+  }
+  
+
+footer {
+    background: #ff007f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
